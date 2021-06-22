@@ -1,0 +1,96 @@
+@import "../inicio.css";
+
+.content .table{
+    width:100%;
+    color: var(--text-color);
+}
+
+.content .table .head{
+    width:100%;
+    height:40%;
+    font-weight: 500;
+    background-color: var(--secondary-color);
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.12), 0 0.0625rem 0.125rem rgba(0,0,0,0.24);
+}
+
+.content .table .head span{
+    text-align:center;
+    width:6.25rem;
+}
+
+.content .table .row{
+    width:100%;
+    height:50%;
+    display:flex;
+    margin:0;
+    flex-direction: row;
+    text-align:center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: solid var(--text-color) 0.125rem;
+}
+
+.content .table .row span{
+    text-align:center;
+    width:6.25rem;
+}
+
+.content .table .row div{
+    width:6.25rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content .table .row a{
+    width: 1.875rem;
+    height: 1.875rem;
+    padding:0;
+}
+
+.content .table .row button{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.875rem;
+    align-items:center;
+    padding:0;
+    border:none;
+    font-size: 1rem;
+    margin-top: 6.25rem;
+    margin-right: 1.25rem;
+    background-color: var(--primary-color);
+    margin:0;
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.12), 0 0.0625rem 0.125rem rgba(0,0,0,0.24);
+}
+
+.content .table .row button:hover{
+    border:solid var(--text-color) 0.0625rem;
+}
+
+.content table td{
+    text-align:center;
+    width: 1.875rem;
+}
+
+@media screen and (max-width:300px){
+    .content .table .head span{
+        width:80px;
+    }
+
+
+    .content .table .row span{
+        width:80px;
+    }
+
+    .content .table .row div{
+        width:80px;
+        padding:0;
+    }
+
+
+}

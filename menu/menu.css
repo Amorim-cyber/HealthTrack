@@ -1,0 +1,80 @@
+@import "../inicio.css";
+
+
+header{
+    justify-content: flex-start;
+    border-bottom: solid var(--text-color) 0.125rem;
+    font-weight: 500;
+}
+
+header .circle{
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-radius: 2.8125rem;
+    font-weight: 700;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.12), 0 0.0625rem 0.125rem rgba(0,0,0,0.24);
+}
+
+.content{
+    justify-content: flex-start;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    
+}
+
+.content a{
+    text-decoration: none;
+    margin-top:1.25rem;
+    width:13.75rem;
+    height: 3.125rem;
+}
+
+.content a button{
+    width:100%;
+    height: 100%;
+    padding:0;
+    border:none;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    transition: none;
+}
+
+.content button:hover{
+    border:solid transparent 0.0625rem;
+}
+
+.content button span{
+    font-weight: 600;
+}
+
+.content button .icon{
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 2.1875rem;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.12), 0 0.0625rem 0.125rem rgba(0,0,0,0.24);
+}
+
+@media screen and (max-width:412px){
+    header .circle{
+        width: 35px;
+        height: 35px;
+        border-radius: 35px;
+        font-size: 16px;
+    }
+}
