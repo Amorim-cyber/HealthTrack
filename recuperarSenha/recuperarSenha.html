@@ -15,7 +15,7 @@
             <div class="details">
                 <form class="form" action="">
                     <input class="field"type="text" placeholder="Digite aqui o seu e-mail">
-                    <a href="../recuperarSenha/senhaEnviada.html" class="btn btn-secondary">
+                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-secondary">
                         Enviar senha
                     </a>
                 </form>
@@ -27,6 +27,29 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="alert alert-success" role="alert">
+                    <i class="bi bi-check-circle-fill"></i>
+               </div>
+                <div class="alert alert-success" role="alert">
+                    Senha enviada com sucesso!
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="buttons">
+                    <a href="../inicio.html">
+                        <button>ok</button>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
