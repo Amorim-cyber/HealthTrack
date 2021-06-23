@@ -1,70 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap4-toggle.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap-icons-1.5.0/bootstrap-icons.css">
     <link rel="stylesheet" href="../dashboard/dashboard.css">
     <title>Dashboard</title>
 </head>
 <body>
+
     <header>
-        <a href="../menu/menu.html">
+        <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas">
             <i class="bi bi-list"></i>
         </a>
         Dashboard
         <div></div>
     </header>
-    
-    <div class="middle">
-        <div class="left">
-            <button>
-                <i class="bi bi-caret-left-fill"></i>
-            </button>
-        </div>
-        <div class="center">
-            <div class="graph">
-                <div class="bars">
-                    <div class="bar">
-                        <span>70</span>
-                        <div id="bar1"></div>
+    <div class="content">
+
+        <div class="middle">
+            <div class="left">
+                <button>
+                    <i class="bi bi-caret-left-fill"></i>
+                </button>
+            </div>
+            <div class="center">
+                <div class="graph">
+                    <div class="bars">
+                        <div class="bar">
+                            <span>70</span>
+                            <div id="bar1"></div>
+                        </div>
+                        <div class="bar">
+                            <span>68,5</span>
+                            <div id="bar2"></div>
+                        </div>
+                        <div class="bar">
+                            <span>66</span>
+                            <div id="bar3"></div>
+                        </div>
                     </div>
-                    <div class="bar">
-                        <span>68,5</span>
-                        <div id="bar2"></div>
-                    </div>
-                    <div class="bar">
-                        <span>66</span>
-                        <div id="bar3"></div>
+                    <div class="dates">
+                        <span>06/01/2020</span>
+                        <span>16/01/2020</span>
+                        <span>03/02/2020</span>
                     </div>
                 </div>
-                <div class="dates">
-                    <span>06/01/2020</span>
-                    <span>16/01/2020</span>
-                    <span>03/02/2020</span>
+                <div class="circle">
+                    <div class="imc">
+                        <div class="group">
+                            <span>19,71</span>
+                            <span class="mini">IMC*</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="circle">
-                <div class="imc">
-                    <div class="group">
-                        <span>19,71</span>
-                        <span class="mini">IMC*</span>
-                    </div>
-                </div>
+            <div class="right">
+                <button>
+                    <i class="bi bi-caret-right-fill"></i>
+                </button>
             </div>
         </div>
-        <div class="right">
-            <button>
-                <i class="bi bi-caret-right-fill"></i>
-            </button>
+        
+        <footer>
+            <span> Índice de Massa Corporal*</span>
+        </footer>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <header>
+                <div class="circle">L</div>
+                Lucas Mattos Amorim
+            </header>
+          <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="content">
+                <a href="../dashboard/dashboard.html">
+                    <button>
+                        <div class="icon">
+                            <i class="bi bi-house-door"></i>
+                        </div>
+                        <span>Dashboard</span>
+                    </button>
+                </a>
+                <a href="../cadastro/cadastro.html">
+                    <button>
+                        <div class="icon">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                        <span>Editar cadastro</span>
+                    </button>
+                </a>
+                <a href="../listaPeso/listaPeso.html">
+                    <button>
+                        <div class="icon">
+                            <i class="bi bi-pencil"></i>
+                        </div>
+                        <span>Editar pesos</span>
+                    </button>
+                </a>
+                <a href="../inicio.html">
+                    <button>
+                        <div class="icon">
+                            <i class="bi bi-door-open-fill"></i>
+                        </div>
+                        <span>Deslogar da conta</span>
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
 
-    <footer>
-        <span> Índice de Massa Corporal*</span>
-    </footer>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
