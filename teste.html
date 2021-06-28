@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-icons-1.5.0/bootstrap-icons.css">
+    <link rel="stylesheet" href="../HealthTrack/janelas/confirmacao.css">
+    <link rel="stylesheet" href="../HealthTrack/janelas/edicao.css">
+    <title>Teste</title>
+</head>
+<body>
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+        Confirmação
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+        Edição1
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+        Edição2
+    </button>
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+        Exclusão
+    </button>
+
+
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="alert alert-success" role="alert">
+                    <i class="bi bi-check-circle-fill"></i>
+               </div>
+                <div class="alert alert-success" role="alert">
+                     Senha enviada com sucesso!
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="buttons">
+                    <a href="../inicio.html">
+                        <button>ok</button>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="item">
+                    <input type="text" onfocus="(this.type='date')" onblur="(this.type='date')" placeholder="data">
+                </div>
+                <div class="item">
+                    <input type="number" placeholder="peso (kg)">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="buttons">
+                    <a href="../listaPeso/editarListaConfirmacao.html">
+                        <button>Editar</button>
+                    </a>
+                    <a href="../listaPeso/listaPeso.html">
+                        <button>Voltar</button>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="item">
+                    <input type="text" placeholder="Lucas Mattos Amorim">
+                </div>
+                <div class="item">
+                    <input type="text" placeholder="amorim22lucas@gmail.com">
+                </div>
+                <div class="item">
+                    <input type="number" placeholder="1,83">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="buttons">
+                    <a href="../listaPeso/editarListaConfirmacao.html">
+                        <button>Editar</button>
+                    </a>
+                    <a href="../listaPeso/listaPeso.html">
+                        <button>Voltar</button>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="alert alert-danger" role="alert">
+                    <i class="bi bi-trash-fill"></i>
+               </div>
+                <div class="alert alert-danger" role="alert">
+                     Tem certeza que deseja excluir?
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="buttons">
+                    <a href="../listaPeso/deletarListaConfirmacao.html">
+                        <button>sim</button>
+                    </a>
+    
+                    <a href="../listaPeso/listaPeso.html">
+                        <button>não</button>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
